@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data.svg" />
+    <None Remove="DataManagement.svg" />
+    <None Remove="Document.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SVGImage-master\Source\SVGImage\DotNetProjects.SVGImage.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Document.svg" />
+  </ItemGroup>
+
+</Project>
